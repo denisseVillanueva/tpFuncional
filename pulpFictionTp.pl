@@ -46,6 +46,12 @@ amigo(vincent, jules).
 amigo(jules, jimmie).
 amigo(vincent, elVendedor).
 
+%5 
+acataOrden(Empleador,Empleado2):-
+trabajaPara(Empleador,Empleado1),
+acataOrden(Empleado1,Empleado2),
+Empleado1\=Empleado2.
+
 % -----------------------------------------PRIMERA PARTE ---------------------------------------------------
 
 
